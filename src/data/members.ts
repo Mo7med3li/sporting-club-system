@@ -1,0 +1,31 @@
+export const membersData = [
+  {
+    id: 1,
+    name: "Ahmed",
+    age: 25,
+    subscriptions: [1],
+  },
+  {
+    id: 2,
+    name: "Menna",
+    age: 22,
+    subscriptions: [2],
+  },
+  {
+    id: 3,
+    name: "Tariq",
+    age: 26,
+    subscriptions: [],
+  },
+];
+
+// get sports from localStorage
+export function getMembers() {
+  if (typeof window === "undefined") return membersData;
+
+  const storedMembers = localStorage.getItem("members");
+  if (storedMembers) return JSON.parse(storedMembers);
+
+  localStorage.setItem("members", JSON.stringify(membersData));
+  return membersData;
+}
