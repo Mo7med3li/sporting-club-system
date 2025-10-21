@@ -48,7 +48,12 @@ const MembersSection = () => {
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {members.map((member) => (
-          <MembersCard key={member.id} member={member} sports={sports} />
+          <MembersCard
+            key={member.id}
+            member={member}
+            sports={sports}
+            setMembers={setMembers}
+          />
         ))}
       </div>
     </section>
