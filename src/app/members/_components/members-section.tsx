@@ -18,10 +18,22 @@ const MembersSection = () => {
 
   // effects
   useEffect(() => {
+    // members
     const members = getMembers() as Member[];
-    const sports = JSON.parse(localStorage.getItem("sports") || getSports());
+
+    // sports
+    let sportsData: Sport[] = [];
+    if (typeof window !== "undefined") {
+      const storedSports = localStorage.getItem("sports");
+      if (storedSports) {
+        sportsData = JSON.parse(storedSports);
+      } else {
+        sportsData = getSports();
+        localStorage.setItem("sports", JSON.stringify(sportsData));
+      }
+    }
     setMembers(members);
-    setSports(sports);
+    setSports(sportsData);
   }, []);
 
   return (
