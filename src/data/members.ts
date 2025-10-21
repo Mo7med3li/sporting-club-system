@@ -1,7 +1,7 @@
 export const membersData = [
   {
     id: 1,
-    name: "Ahmed",
+    name: "Mohamed Ali",
     age: 25,
     subscriptions: [{ id: 1 }, { id: 2 }, { id: 3 }],
   },
