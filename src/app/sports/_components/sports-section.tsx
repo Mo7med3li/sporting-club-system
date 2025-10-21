@@ -22,14 +22,14 @@ const SportsSection = () => {
 
   return (
     <section className="space-y-6">
-      <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+      <div className="flex flex-col items-center gap-3 md:flex-row md:justify-between">
         <div>
           <h1 className="text-2xl md:text-3xl font-semibold">Sports</h1>
           <p className="text-muted-foreground">
             Browse and manage sports in your club.
           </p>
         </div>
-
+        <div className="text-sm text-gray-500">{sports.length} total</div>
         {/* sports form */}
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogTrigger asChild>

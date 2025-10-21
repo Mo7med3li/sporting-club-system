@@ -42,8 +42,7 @@ const MembersForm = ({
     const members = getMembers();
     const newMember = {
       id: members.length + 1,
-      name: data.name,
-      age: +data.age,
+      ...data,
       subscriptions: data.subscriptions,
     };
     const addedMember = [...members, newMember];

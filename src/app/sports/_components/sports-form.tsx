@@ -38,8 +38,7 @@ const SportsForm = ({
     const sports = getSports();
     const newSport = {
       id: sports.length + 1,
-      name: data.name,
-      coach: data.coach,
+      ...data,
     };
     const addedSport = [...sports, newSport];
     localStorage.setItem("sports", JSON.stringify(addedSport));

@@ -28,9 +28,7 @@ const MembersSection = () => {
     <section className="space-y-6">
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-semibold">Members</h2>
-        <div className="text-sm text-muted-foreground">
-          {members.length} total
-        </div>
+        <div className="text-sm text-gray-500">{members.length} total</div>
 
         {/* add member dialog */}
         <Dialog open={open} onOpenChange={setOpen}>
