@@ -57,4 +57,4 @@ http://localhost:3000
 Live Demo
 
 You can view the live demo here
-https://sporting-club-system-six.vercel.app/
+[sporting-club-system-lilac.vercel.app](https://sporting-club-system-lilac.vercel.app/)
