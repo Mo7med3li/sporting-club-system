@@ -1,8 +1,10 @@
 # Sporting Club Frontend App
 
 ## Description
+
 This is a simple frontend application for a sporting club system.  
 Users can:
+
 - View a list of sports
 - Add a new sport
 - View a list of members
@@ -15,12 +17,15 @@ The app uses **React**, **TypeScript**, **React Hook Form**,**Shadcn UI** and **
 ---
 
 ## Features
+
 ### Core Features
+
 - **Sports Page**: Display all sports and add a new sport
 - **Members Page**: Display all members and add a new member
 - **Subscriptions**: Subscribe a member to one or more sports while preventing duplicates
 
 ### Bonus Features
+
 - Form validation with Zod
 - Responsive layout
 - Clean and reusable components
@@ -30,24 +35,26 @@ The app uses **React**, **TypeScript**, **React Hook Form**,**Shadcn UI** and **
 ## Setup Instructions
 
 1. Clone the repository:
-```bash
+
 git clone <your-repo-link>
 
 2-Navigate to the project folder:
 
 cd <project-folder>
 
-
 3-Install dependencies:
 
 yarn
-
 
 4-Start the development server:
 
 yarn dev
 
-
 5-Open the app in your browser:
 
 http://localhost:3000
+
+Live Demo
+
+You can view the live demo here
+https://sporting-club-system-six.vercel.app/

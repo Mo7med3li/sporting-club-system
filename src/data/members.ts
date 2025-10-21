@@ -3,7 +3,7 @@ export const membersData = [
     id: 1,
     name: "Mohamed Ali",
     age: 25,
-    subscriptions: [{ id: 1 }, { id: 2 }, { id: 3 }],
+    subscriptions: [{ id: 1 }, { id: 2 }],
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const membersData = [
     id: 3,
     name: "Tariq",
     age: 26,
-    subscriptions: [{ id: 3 }],
+    subscriptions: [{ id: 1 }],
   },
 ];
 
