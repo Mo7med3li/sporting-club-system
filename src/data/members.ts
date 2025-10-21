@@ -3,19 +3,19 @@ export const membersData = [
     id: 1,
     name: "Ahmed",
     age: 25,
-    subscriptions: [1],
+    subscriptions: [{ id: 1 }, { id: 2 }, { id: 3 }],
   },
   {
     id: 2,
     name: "Menna",
     age: 22,
-    subscriptions: [2],
+    subscriptions: [{ id: 2 }],
   },
   {
     id: 3,
     name: "Tariq",
     age: 26,
-    subscriptions: [],
+    subscriptions: [{ id: 3 }],
   },
 ];
 
